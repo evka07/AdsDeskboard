@@ -1,0 +1,35 @@
+@import '../../../styles/baseStyle.scss';
+
+.advertCard {
+  margin: 2em 0;
+  min-height: 420px;
+  position: relative;
+  .img {
+    width: 100%;
+    min-height: 280px;
+    height: 60%;
+  }
+  .title {
+    min-height: 50px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: $color-warm;
+      border-color: $color-warm;
+      border-radius: $border-radius;
+      padding: $button-padding;
+      &:hover {
+        background-color: $color-main;
+        border-color: $color-main;
+      }
+    }
+  }
+}

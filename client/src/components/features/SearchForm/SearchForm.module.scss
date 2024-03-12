@@ -1,0 +1,28 @@
+@import '../../../styles/baseStyle.scss';
+
+.search {
+  display: flex;
+  justify-content: center;
+
+  .form {
+    border-color: $color-cool;
+    border-radius: $border-radius;
+  }
+
+  .buttonCol {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+
+    .button {
+      background-color: $color-cool;
+      border-color: $color-cool;
+      border-radius: $border-radius;
+      padding: $button-padding;
+      &:hover {
+        background-color: $color-main;
+        border-color: $color-main;
+      }
+    }
+  }
+}

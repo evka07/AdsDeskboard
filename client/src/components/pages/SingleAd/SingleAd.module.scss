@@ -1,0 +1,50 @@
+@import '../../../styles/baseStyle.scss';
+
+.card {
+  display: flex;
+  justify-content: center;
+  .adCard {
+    width: 600px;
+
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+    }
+
+    .buttonEdit {
+      background-color: $color-cool;
+      border-color: $color-cool;
+      border-radius: $border-radius;
+      padding: $button-padding;
+      margin-right: 5px;
+      &:hover {
+        background-color: $color-main;
+        border-color: $color-main;
+      }
+      &:focus {
+        background-color: $color-main;
+        border: none;
+      }
+    }
+    .buttonDelete {
+      background-color: $color-warm;
+      border-color: $color-warm;
+      border-radius: $border-radius;
+      padding: $button-padding;
+      margin-right: 5px;
+      &:hover {
+        background-color: lighten($color-warm, 10%);
+        border-color: lighten($color-warm, 10%);
+      }
+      &:focus {
+        background-color: lighten($color-warm, 10%);
+        border: none;
+      }
+    }
+  }
+}
